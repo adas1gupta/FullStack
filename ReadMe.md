@@ -29,3 +29,6 @@ HEAD is a pointer to the last commit
 git log gives log of commits in reverse chronological order
 git log -> q (self explanatory)
 to remove changes, do git reset --hard log hashtage
+fork copies other people's repositories by using fork on another repository on GitHub
+Then, pull the fork repository to local machine and do things as normal. 
+If you want to modify original repository, push changes to fork, then make a pull request of the original repository. 
