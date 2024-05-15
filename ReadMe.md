@@ -20,3 +20,12 @@ When changes are made to main, implement them to Branch and keep working on Bran
 git commit -am "msg" -> git checkout NameofBranch -> git diff main -> q -> git merge main 
 If there's a merge conflict (i.e. code that is different on the same line in both branches), change it directly on the code editor. 
 Code editor will first display the code from current branch, then the code from branch being merged in (in this case, main)
+
+## Undoing 
+
+git reset (filename) resets the stage of commits (occurs after using git add)
+git reset HEAD~(number of commits 1/2/3/... or log hash) -> this only unstages commits 
+HEAD is a pointer to the last commit
+git log gives log of commits in reverse chronological order
+git log -> q (self explanatory)
+to remove changes, do git reset --hard log hashtage
