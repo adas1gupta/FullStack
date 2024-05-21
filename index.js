@@ -21,6 +21,9 @@ app.get(
         scope: ['profile', 'email']
     })
 );
+app.get('/auth/google/callback',
+    passport.authenticate('google')
+);
 app.get('/',(req,res) => { 
 //get is retrieving a new route handler
 // '/' is the name of the host; you can have something like '/category'
