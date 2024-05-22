@@ -1,7 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const keys = require('./server/config/keys')
+const keys = require('./server/config/keys');
 require('./server/services/passport');
+require('./server/models/User');
 
 mongoose.connect(keys.mongoURI);
 
@@ -21,3 +22,4 @@ require('./server/routes/authRoutes')(app);
 const PORT = process.env.PORT || 5000; //by default, use value of 5000
 app.listen(PORT); //incoming traffic on port 5000 (localhost:5000 in google)
 
+//this file is to start up the application
