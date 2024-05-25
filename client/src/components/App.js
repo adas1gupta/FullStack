@@ -28,8 +28,8 @@ class App extends Component {
                         <Route exact path = "/surveys" component = {Dashboard} />
                         <Route path = "/surveys/new" component = {SurveyNew} />
                     </div>
-            </BrowserRouter>
-        </div>
+                </BrowserRouter>
+            </div>
         );
     }   
 };
